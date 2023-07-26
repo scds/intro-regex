@@ -10,17 +10,21 @@ Add, edit, or remove any content below for the workshop in question.
 -->
 
 # Workshop Introduction 
-Follow along with the introductory video, slides, or text below.
+<!-- Follow along with the introductory video, slides, or text below.
 
-<!-- If your page has a video to go along with it, put it here. -->
 <iframe height="416" width="100%" allowfullscreen frameborder=0 src="https://echo360.ca/media/a65689c0-c35c-4f33-9c12-f0ac97883f54/public?autoplay=false&automute=false"></iframe>
 [View original here.](https://echo360.ca/media/a65689c0-c35c-4f33-9c12-f0ac97883f54/public?autoplay=false&automute=false)
 
-<!-- If your page has slides/PDFs/worksheets to go along with it, put it here. -->
 <embed width="100%" height="466" src="assets/docs/examplePDF.pdf" style="border:none;">
-[Download slides here.](assets/docs/examplePDF.pdf)
+[Download slides here.](assets/docs/examplePDF.pdf) -->
 
 <!-- Below the video/slides, this is where you put the text version of the page. -->
-## What is this workshop?
+## What are Regular Expressions?
 
-This is where the text version of this module will go. This is optional.
+awa awa.
+
+### History of Regular Expressions
+
+### What can Regular Expressions be used for?
+
+### What supports Regular Expression searches?

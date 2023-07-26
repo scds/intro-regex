@@ -24,11 +24,11 @@ A small description about the lesson.
 - Second learning objective.
 - Another learning objective.
 
-## Lesson Video
+<!-- ## Lesson Video
 The following video demonstrates each of the steps outlined below in text.
 
 <iframe height="416" width="100%" allowfullscreen frameborder=0 src="https://echo360.ca/media/a65689c0-c35c-4f33-9c12-f0ac97883f54/public?autoplay=false&automute=false"></iframe>
-[View original here.](https://echo360.ca/media/a65689c0-c35c-4f33-9c12-f0ac97883f54/public?autoplay=false&automute=false)
+[View original here.](https://echo360.ca/media/a65689c0-c35c-4f33-9c12-f0ac97883f54/public?autoplay=false&automute=false) -->
 
 ## Sub-Topic
 

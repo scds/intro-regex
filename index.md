@@ -5,7 +5,7 @@ nav_order: 1
 has_toc: false
 
 # Set this to "false" if you removed 'previousOffering.md'
-has_children: true 
+has_children: false 
 ---
 <!-- 
 This will be the home page of your module. It should give a small introduction to the student about the workshop topic.
@@ -15,18 +15,11 @@ Add, edit, or remove any content below for the workshop in question. -->
 <img src="assets/img/titleSlide.png" alt="Workshop Title Slide" width="100%">
 
 <!-- Main header -->
-# Getting started with ___.
+# Introduction to Pattern Matching with Regular Expressions
 
 This is a short description about the topic of the workshop. Replace this text with your own.
 
 In this tutorial, you will learn about ______.
-
-## Prerequisites
-
-<!-- If creating or installing is covered in the module (preparation), mention that in brackets. -->
-- A [GitHub.com](https://www.github.com) account.
-- Installation of [Python](https://www.python.org/downloads/). (This will be covered in the [Preparation](preparation) page)
-- Some familiary with **softwareName/topic here**
 
 <!-- What will the student learn to do, learn to use, etc. -->
 ## Learning Objectives
