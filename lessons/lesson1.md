@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lesson 1 - Lesson Name
+title: Lesson 1 - Basic Syntax and Character Matching
 nav_order: 1
 parent: Lessons
 ---
@@ -11,7 +11,7 @@ Add, edit, or remove any content below for the workshop in question. -->
 <!-- Putting a {: .no_toc} above a header removes it from the table of contents -->
 
 {: .no_toc}  
-# Lesson 1 - Lesson Name 
+# Lesson 1 - Basic Syntax and Character Matching
 
 A small description about the lesson.
 
@@ -40,13 +40,73 @@ The following video demonstrates each of the steps outlined below in text.
 [View original here.](https://echo360.ca/media/a65689c0-c35c-4f33-9c12-f0ac97883f54/public?autoplay=false&automute=false) -->
 
 <!-- Text content format for your lessons if you don't want to rely on videos, or want to provide another format of learning consumption. -->
-## Sub-Topic
+## Regular Characters
 
-Include a text version of your topic here.
+At its simplest, you can simply search for regular characters using regular expressions, much like other search tools (such as your browser's Ctrl+F search). Using any characters from A-Z, a-z, and 0-9 work like usual -- keep in mind that searches are case-sensitive.
 
-## Another sub-topic
+TODO - EXAMPLE
 
-Include text here.
+## Symbols
+
+Some symbols, such as `.`, `?`, and `!`, have a special meaning when using regular expressions. If you simply wanted to search for all occurences of a symbol, preceed the symbol with a backslash (\\).
+
+TODO - EXAMPLE WITH period
+
+## Metacharacters
+
+Rather than specifying the characters and symbols, you can search for more broad queries. 
+
+### The Dot (.)
+
+The dot (.) matches any singular character, with the exception of newlines. By itself, it can't do much -- it will just highlight the entire text. However, it becomes extremely useful in some contexts, which you'll see later in the module.
+
+TODO - EXAMPLE
+
+### Whitespace
+
+The \s metacharacter matches any whitespace character, which includes spaces, tabs, newlines, null characters, and carriage returns.
+
+TODO - EXAMPLE
+
+You can also search for any non-whitespace character using \S.
+
+TODO - EXAMPLE
+
+If you are instead searching for a specific whitespace character...
+
+\n
+: Newline
+
+\t
+: Tab
+
+\0
+: Null character
+
+\r
+: Carriage returns
+
+### Digits
+
+The \d metacharacter matches any digit character (0-9).
+
+TODO - example
+
+Like with whitespace, \D searches for any non-digit character.
+
+TODO - EXAMPLE
+
+## Character Sets and Ranges
+
+You can also create your own character sets for which characters to match using square brackets.
+
+TODO - EXAMPLE
+
+If you want to match several characters sequentially, you can use a character range instead.
+
+TODO - EXAMPLE
+
+By adding a caret symbol (^) at the start of your character set, the search will look for any character *except* the characters in the set.
 
 ## Another sub-topic
 
