@@ -66,12 +66,6 @@ Lastly, you can also match a character *at least* *x* amount of times -- {*x*, }
 
 TODO - Example
 
-## Using Quantifiers on a Group of Characters
-
-If you want to use a quantifier on a group of characters, you'll need to surround the group of characters with round brackets ( ). The quantifier will follow.
-
-TODO - Example
-
 ## Lazy vs. Greedy Quantifiers
 
 By default, quantifiers are considered "greedy". When matching a pattern, RegEx will search for the longest possible occurrence that matches your search pattern. This can sometimes be a problem. See the example below.
@@ -88,7 +82,3 @@ TODO - Example
 
 - Remind the student about what they just learned.
 - You can also note down any key information to keep in mind.
-
-## Additional Resources (optional)
-
-- Here, you can list some additional resources the student can access to learn more about this lesson.
