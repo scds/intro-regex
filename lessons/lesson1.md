@@ -86,6 +86,8 @@ If you are instead searching for a specific whitespace character...
 \r
 : Carriage returns
 
+TODO - format this differently
+
 ### Digits
 
 The \d metacharacter matches any digit character (0-9).
@@ -108,9 +110,7 @@ TODO - EXAMPLE
 
 By adding a caret symbol (^) at the start of your character set, the search will look for any character *except* the characters in the set.
 
-## Another sub-topic
-
-Include text here.
+TODO - EXAMPLE
 
 <!-- Summarize your learning objectives here. It acts as a reminder to the learner about what they just learned, as well as a checklist for you to make sure you covered everything you wished to cover. -->
 ## Key Points / Summary
@@ -118,7 +118,3 @@ Include text here.
 - Remind the student about what they just learned.
 - You can also note down any key information to keep in mind.
 
-<!-- You can add your additional resources for a specific lesson here, however there is also an additional resources page alongside the conclusion at the end of the workshop website. -->
-## Additional Resources (optional)
-
-- Here, you can list some additional resources the student can access to learn more about this lesson.
