@@ -44,13 +44,30 @@ The following video demonstrates each of the steps outlined below in text.
 
 At its simplest, you can simply search for regular characters using regular expressions, much like other search tools (such as your browser's Ctrl+F search). Using any characters from A-Z, a-z, and 0-9 work like usual -- keep in mind that searches are case-sensitive.
 
-TODO - EXAMPLE
+For the examples below, we'll search the following text:
+> "Sample Text: This is an example text showcasing regular characters such as A, b, 1, and more."
+
+In the search below, we look for any occurrences of the term "example".
+
+<img src="../assets/img/basic1.png" width="100%" style="border: 2px solid #000;">
+
+In this next example search, we look for any occurrences of the letter "s". Note that it only highlights the lowercase letters.
+
+<img src="../assets/img/basic2.png" width="100%" style="border: 2px solid #000;">
+
 
 ## Symbols
 
 Some symbols, such as `.`, `?`, and `!`, have a special meaning when using regular expressions. If you simply wanted to search for all occurences of a symbol, preceed the symbol with a backslash (\\).
 
-TODO - EXAMPLE WITH period
+Below, we show what happens if you simply use "." as your regular expression. Instead of searching for all occurrences of ".", it will highlight every single character.
+
+<img src="../assets/img/basic3.png" width="100%" style="border: 2px solid #000;">
+
+If you wanted to search for the occurrences of ".", you'll need to add a backslash before the period.
+
+<img src="../assets/img/basic4.png" width="100%" style="border: 2px solid #000;">
+
 
 ## Metacharacters
 
@@ -60,7 +77,9 @@ Rather than specifying the characters and symbols, you can search for more broad
 
 The dot (.) matches any singular character, with the exception of newlines. By itself, it can't do much -- it will just highlight the entire text. However, it becomes extremely useful in some contexts, which you'll see later in the module.
 
-TODO - EXAMPLE
+The example below uses the search query `i.`, which will return all occurences of the letter "i" followed by any character.
+
+<img src="../assets/img/basic5.png" width="100%" style="border: 2px solid #000;">
 
 ### Whitespace
 

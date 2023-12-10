@@ -8,7 +8,7 @@ parent: Lessons
 {: .no_toc}  
 # Lesson 0 - Using RegEx101
 
-A small description about the lesson.
+This lesson goes over RegEx101, an interactive platform for building, testing, and debugging regular expressions.
 
 <details markdown="block" class="toc">
   <summary>
@@ -20,9 +20,7 @@ A small description about the lesson.
 </details>
 
 ## Lesson Objectives
-- A learning objective.
-- Second learning objective.
-- Another learning objective.
+- Explore the features of RegEx101 for debugging and visualizing regular expressions.
 
 <!-- ## Lesson Video
 The following video demonstrates each of the steps outlined below in text.
@@ -68,9 +66,4 @@ On the right hand side, you'll see a more detailed "Match Information" section, 
 
 ## Key Points / Summary
 
-- Remind the student about what they just learned.
-- You can also note down any key information to keep in mind.
-
-## Additional Resources (optional)
-
-- Here, you can list some additional resources the student can access to learn more about this lesson.
+- [RegEx101](https://regex101.com/) is an interactive regular expression console that lets you test your regular expressions.
