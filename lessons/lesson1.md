@@ -85,13 +85,13 @@ The example below uses the search query `i.`, which will return all occurences o
 
 The \s metacharacter matches any whitespace character, which includes spaces, tabs, newlines, null characters, and carriage returns.
 
-TODO - EXAMPLE
+<img src="../assets/img/basic6.png" width="100%" style="border: 2px solid #000;">
 
 You can also search for any non-whitespace character using \S.
 
-TODO - EXAMPLE
+<img src="../assets/img/basic7.png" width="100%" style="border: 2px solid #000;">
 
-If you are instead searching for a specific whitespace character...
+If you are instead searching for a specific whitespace character, you can use...
 
 \n
 : Newline
@@ -105,31 +105,30 @@ If you are instead searching for a specific whitespace character...
 \r
 : Carriage returns
 
-TODO - format this differently
 
 ### Digits
 
 The \d metacharacter matches any digit character (0-9).
 
-TODO - example
+<img src="../assets/img/basic8.png" width="100%" style="border: 2px solid #000;">
 
 Like with whitespace, \D searches for any non-digit character.
 
-TODO - EXAMPLE
+<img src="../assets/img/basic9.png" width="100%" style="border: 2px solid #000;">
 
 ## Character Sets and Ranges
 
-You can also create your own character sets for which characters to match using square brackets.
+You can also create your own character sets for which characters to match using square brackets. 
 
-TODO - EXAMPLE
+<img src="../assets/img/basic10.png" width="100%" style="border: 2px solid #000;">
 
-If you want to match several characters sequentially, you can use a character range instead.
+If you want to match several characters sequentially, you can use a character range instead. The range `a-d` searches for the letters a, b, c, and d. The range `a-z` similarly for every **lowercase** letter from a to z.
 
-TODO - EXAMPLE
+<img src="../assets/img/basic11.png" width="100%" style="border: 2px solid #000;">
 
 By adding a caret symbol (^) at the start of your character set, the search will look for any character *except* the characters in the set.
 
-TODO - EXAMPLE
+<img src="../assets/img/basic12.png" width="100%" style="border: 2px solid #000;">
 
 <!-- Summarize your learning objectives here. It acts as a reminder to the learner about what they just learned, as well as a checklist for you to make sure you covered everything you wished to cover. -->
 ## Key Points / Summary
