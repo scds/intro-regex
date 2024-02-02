@@ -13,7 +13,7 @@ Add, edit, or remove any content below for the workshop in question. -->
 {: .no_toc}  
 # Lesson 1 - Basic Syntax and Character Matching
 
-A small description about the lesson.
+In this lesson, you will learn about how to use RegEx as a basic text searching tool, as well as some of the metacharacters it provides to do some more advanced searches.
 
 <!-- This is your table of contents. You don't need to touch it, it automatically creates it when you add or remove headers. If you do not want a header to be included, put {: .no_toc } above the header line, as you can see above with Lesson 1 - Lesson Name. Make sure that there's also an empty line above {: .no_toc }... Markdown is picky about this :( -->
 <details markdown="block" class="toc">
@@ -27,9 +27,9 @@ A small description about the lesson.
 
 <!-- Here are your learning objectives. Just like in the introduction, but more specific for this lesson. -->
 ## Lesson Objectives
-- A learning objective.
-- Second learning objective.
-- Another learning objective.
+- Use RegEx as a basic text searching tool.
+- Learn about and use metacharacters to create some more advanced searches.
+- Search for ranges of characters using character sets and ranges.
 
 <!-- A video for your lesson (if applicable) -->
 <!-- ## Lesson Video
@@ -42,10 +42,13 @@ The following video demonstrates each of the steps outlined below in text.
 <!-- Text content format for your lessons if you don't want to rely on videos, or want to provide another format of learning consumption. -->
 ## Regular Characters
 
-At its simplest, you can simply search for regular characters using regular expressions, much like other search tools (such as your browser's Ctrl+F search). Using any characters from A-Z, a-z, and 0-9 work like usual -- keep in mind that searches are case-sensitive.
+At its simplest, you can search for regular characters and words using regular expressions, much like other search tools (such as your browser's Ctrl+F search). Using any characters from A-Z, a-z, and 0-9 work like usual -- do keep in mind however that searches are case-sensitive.
 
 For the examples below, we'll search the following text:
-> "Sample Text: This is an example text showcasing regular characters such as A, b, 1, and more."
+
+```
+Sample Text: This is an example text showcasing regular characters such as A, b, 1, and more.
+```
 
 In the search below, we look for any occurrences of the term "example".
 
@@ -83,7 +86,7 @@ The example below uses the search query `i.`, which will return all occurences o
 
 ### Whitespace
 
-The \s metacharacter matches any whitespace character, which includes spaces, tabs, newlines, null characters, and carriage returns.
+The \s metacharacter matches any whitespace character, which includes spaces, tabs, newlines, null characters, and carriage returns. With a simple test string such as this one, it will only highlight the spaces. However, if you were to create a couple paragraphs, the tabs at the start of each paragraph as well as the newline (enter) characters will also be highlighted.
 
 <img src="../assets/img/basic6.png" width="100%" style="border: 2px solid #000;">
 
@@ -118,21 +121,21 @@ Like with whitespace, \D searches for any non-digit character.
 
 ## Character Sets and Ranges
 
-You can also create your own character sets for which characters to match using square brackets. 
+You can also create your own character sets for which characters to match using square brackets. Do not separate these characters by spaces or commas, otherwise the RegEx will also search for all occurrences of " " and "," as well.
 
 <img src="../assets/img/basic10.png" width="100%" style="border: 2px solid #000;">
 
-If you want to match several characters sequentially, you can use a character range instead. The range `a-d` searches for the letters a, b, c, and d. The range `a-z` similarly for every **lowercase** letter from a to z.
+If you want to match several characters sequentially, you can use a character range instead. The range `a-d` searches for the letters a, b, c, and d. The range `a-z` similarly searches for every **lowercase** letter from a to z.
 
 <img src="../assets/img/basic11.png" width="100%" style="border: 2px solid #000;">
 
-By adding a caret symbol (^) at the start of your character set, the search will look for any character *except* the characters in the set.
+By adding a caret symbol (^) at the start of your character set, the search will look for any character that is **not** in the set. This example below searches for all characters that are not a, b, c, or d.
 
 <img src="../assets/img/basic12.png" width="100%" style="border: 2px solid #000;">
 
 <!-- Summarize your learning objectives here. It acts as a reminder to the learner about what they just learned, as well as a checklist for you to make sure you covered everything you wished to cover. -->
 ## Key Points / Summary
 
-- Remind the student about what they just learned.
-- You can also note down any key information to keep in mind.
-
+- You can use RegEx as a basic text search tool if you're just looking of words.
+- Metacharacters can help you create more advanced queries.
+- Character sets and ranges can help you look for ranges of characters without having to specify each character seperately.
