@@ -40,9 +40,17 @@ When an asterix proceeds a character, RegEx will match the character zero or mor
 
 TODO - Example
 
+When used in combination with the dot (.) from the previous lesson, you can start searching for things like "all the words that end with \_\_" or "all the words that start with \_\_". We do this in the example below to find \_\_\_\_.
+
+TODO - Example
+
+You might try to use the asterix to search for all numbers by using the `\d*' query. However, the issue here is that it will also match when there are 0 numbers. An example of that is shown below.
+
+TODO - Example
+
 ### The Plus (+)
 
-Similarly to the asterix, when a plus sign proceeds a character, RegEx will match the character one or more times.
+To solve the issue from the previous section, we now introduce the plus. Similarly to the asterix, when a plus sign proceeds a character, RegEx will match the character **one** or more times. This will prevent the matches with an empty result.
 
 TODO - Example
 
