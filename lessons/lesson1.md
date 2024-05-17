@@ -67,7 +67,7 @@ Below, we show what happens if you simply use "." as your regular expression. In
 
 <img src="../assets/img/basic3.png" width="100%" style="border: 2px solid #000;">
 
-If you wanted to search for the occurrences of ".", you'll need to add a backslash before the period.
+If you wanted to search for the occurrences of ".", you'll need to add a backslash before the period. This can be said about any other special character.
 
 <img src="../assets/img/basic4.png" width="100%" style="border: 2px solid #000;">
 
