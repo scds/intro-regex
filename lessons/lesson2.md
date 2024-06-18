@@ -8,7 +8,7 @@ parent: Lessons
 {: .no_toc}  
 # Lesson 2 - Quantifiers and Repetition
 
-A small description about the lesson.
+This lesson will cover quantifers, which will enable you to make more specific and complex search queries.
 
 <details markdown="block" class="toc">
   <summary>
