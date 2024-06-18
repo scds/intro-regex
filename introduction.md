@@ -39,8 +39,7 @@ Text Searching
 : Searching for text is an action you might use on a frequent basis. With regular expressions, you can search for more specific patterns within a text.
 
 Text Validation
-: Regular expressions allow you to verify a user's input. For example, you can verify whether an email input is valid:   
-\[some text\]@\[some text\].\[some short text]
+: Regular expressions allow you to verify a user's input. For example, you can verify whether an email input is valid.
 
 Text Extraction
 : You can extract chunks of data from blocks of texts, such as dates, URLs, domains, file names, file types, and more.
@@ -50,21 +49,11 @@ Text Manipulation
 
 ### What supports Regular Expression searches?
 
-TODO: format this differently
+Some tools and platforms that support Regular Expressions include (but are not exclusive to):
 
-Programming languages
-: Perl, Python, R, Javascript, and more.
-
-Text Editors and IDEs
-: Notepad++, Visual Studio Code.
-
-Database Systems
-: MySQL, SQLite, MongoDB
-
-Data Analysis Tools
-: Excel, OpenRefine, Tableau
-
-Command-line Utilities
-: grep, sed, awk (Unix-like systems)  
-  findstr (Windows)
+- **Programming languages** - Perl, Python, R, Javascript
+- **Text Editors and IDEs** - Notepad++, Visual Studio Code.
+- **Database Systems** - MySQL, SQLite, MongoDB
+- **Data Analysis Tools**  - Excel, OpenRefine, Tableau
+- **Command-line Utilities** - grep, sed, awk (Unix-like systems), findstr (Windows)
   

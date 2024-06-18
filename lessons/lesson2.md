@@ -20,9 +20,9 @@ A small description about the lesson.
 </details>
 
 ## Lesson Objectives
-- A learning objective.
-- Second learning objective.
-- Another learning objective.
+- Use quantifiers to match several sequential characters.
+- Match a pattern that may or may not occur in the test string.
+- Differentiate between lazy and greedy quantifiers.
 
 <!-- ## Lesson Video
 The following video demonstrates each of the steps outlined below in text.
@@ -64,7 +64,7 @@ For the examples below, we’ll search the following text:
 Sample Text: My phone number is 123-456-7890.
 ```
 
-We use the query "*\\d+-\\d+-\\d+" to find all phone numbers in the shape of x-x-x where x is any number of digits.
+We use the query "*\\d+-\\d+-\\d+" to find all phone numbers in the format of x-x-x where x is any number of digits.
 
 <img src="../assets/img/quant4.png" width="100%" style="border: 2px solid #000;">
 
@@ -74,7 +74,7 @@ When a pattern may or may not appear, you can use the question mark. This will m
 
 <img src="../assets/img/quant5.png" width="100%" style="border: 2px solid #000;">
 
-Let's break down this regular expression. Here, we want to look for all numbers separated by two -'s, where the first group of numbers may or may not be surrounded by parentheses ( ).  If we want to look for a single parenthesis, we have to add a backslash before them because they too are special characters. Since the parenthesis may or may not occur, we add a ? symbol after it, to show that it can match zero or one time. We do this for both the opening parenthesis and the closing parenthesis, and we get "\\(?\d+\\)?-\\d+-\\d+".
+Let's break down the regular expression used above. Here, we want to look for all numbers separated by two -'s, where the first group of numbers may or may not be surrounded by parentheses ( ).  If we want to look for a single parenthesis, we have to add a backslash before them because they too are special characters. Since the parenthesis may or may not occur, we add a ? symbol after it, to show that it can match zero or one time. We do this for both the opening parenthesis and the closing parenthesis, and we get "\\(?\d+\\)?-\\d+-\\d+".
 
 {: .note }
 > Note that the above expression won't be entirely correct. If the sample text had something like "(455-455-4555" (with a single parenthesis), it would also match to it. The image below shows this. Ideally, we'd want to check whether both occur or neither occur. 
@@ -83,7 +83,7 @@ Let's break down this regular expression. Here, we want to look for all numbers 
 
 ### More Specific Quantifiers
 
-For the following examples, the sample text is the following:
+For the following examples, the test string used is below.
 
 ```
 aaaaa
@@ -97,7 +97,7 @@ If you want to match a character *exactly* *x* amount of times, you can use curl
 
 <img src="../assets/img/quant7.png" width="100%" style="border: 2px solid #000;">
 
-You can also specify a range in this way too, from *x* to *y* amount of times (inclusive) -- {*x*, *y*}
+You can also specify a range in this way too, from *x* to *y* amount of times (inclusive) -- {*x*, *y*}.
 
 <img src="../assets/img/quant8.png" width="100%" style="border: 2px solid #000;">
 
@@ -107,7 +107,7 @@ Lastly, you can also match a character *at least* *x* amount of times -- {*x*, }
 
 ## Lazy vs. Greedy Quantifiers
 
-For the following examples, the sample text is the following:
+For the following examples, the test string is below.
 
 ```
 (5+3)*(3-2)
@@ -117,7 +117,7 @@ By default, quantifiers are considered "greedy". When matching a pattern, RegEx 
 
 <img src="../assets/img/quant10.png" width="100%" style="border: 2px solid #000;">
 
-Since the .* in our regular expression can match any letter, it could also match parentheses. So, when the regular expression looks through our sample text, it finds the first parenthesis, treats everythign else in the middle as the . wildcard character, and then matches the final parentheses.
+Since the .* in our regular expression can match any letter, it could also match parentheses. So, when the regular expression looks through our sample text, it finds the first parenthesis, treats everything else in the middle as the . wildcard character, and then matches the final parentheses.
 
 To make a quantifier lazy, you have to add a question mark (?) following the quantifier.
 
@@ -127,5 +127,5 @@ Now, we have two separate matches! One for (5+3), and one for (3-2).
 
 ## Key Points / Summary
 
-- Remind the student about what they just learned.
-- You can also note down any key information to keep in mind.
+- The *, +, and ? symbols are quantifiers that can specify the number of times a symbol is expected to appear.
+- Greedy quantifiers match a pattern as many times as possible, while lazy quantifiers match as few as possible.

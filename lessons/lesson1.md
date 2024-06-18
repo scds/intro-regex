@@ -13,7 +13,7 @@ Add, edit, or remove any content below for the workshop in question. -->
 {: .no_toc}  
 # Lesson 1 - Basic Syntax and Character Matching
 
-In this lesson, you will learn about how to use RegEx as a basic text searching tool, as well as some of the metacharacters it provides to do some more advanced searches.
+In this lesson, you will learn about how to use RegEx as a basic text searching tool, as well as some of the metacharacters it provides to be able to do some more advanced searches.
 
 <!-- This is your table of contents. You don't need to touch it, it automatically creates it when you add or remove headers. If you do not want a header to be included, put {: .no_toc } above the header line, as you can see above with Lesson 1 - Lesson Name. Make sure that there's also an empty line above {: .no_toc }... Markdown is picky about this :( -->
 <details markdown="block" class="toc">
@@ -61,9 +61,9 @@ In this next example search, we look for any occurrences of the letter "s". Note
 
 ## Symbols
 
-Some symbols, such as `.`, `?`, and `!`, have a special meaning when using regular expressions. If you simply wanted to search for all occurences of a symbol, preceed the symbol with a backslash (\\).
+Some symbols, such as `.`, `?`, and `!`, have a special meaning when using regular expressions. If you simply wanted to search for all occurences of these types of symbols, preceed the symbol with a backslash (\\).
 
-Below, we show what happens if you simply use "." as your regular expression. Instead of searching for all occurrences of ".", it will highlight every single character.
+Below, we show what happens if you only use "." as your regular expression. Instead of searching for all occurrences of ".", it will highlight every single character.
 
 <img src="../assets/img/basic3.png" width="100%" style="border: 2px solid #000;">
 
@@ -90,7 +90,7 @@ The \s metacharacter matches any whitespace character, which includes spaces, ta
 
 <img src="../assets/img/basic6.png" width="100%" style="border: 2px solid #000;">
 
-You can also search for any non-whitespace character using \S.
+You can also search for any **non**-whitespace character using \S.
 
 <img src="../assets/img/basic7.png" width="100%" style="border: 2px solid #000;">
 
@@ -115,7 +115,7 @@ The \d metacharacter matches any digit character (0-9).
 
 <img src="../assets/img/basic8.png" width="100%" style="border: 2px solid #000;">
 
-Like with whitespace, \D searches for any non-digit character.
+Like with whitespace, \D searches for any **non**-digit character.
 
 <img src="../assets/img/basic9.png" width="100%" style="border: 2px solid #000;">
 
