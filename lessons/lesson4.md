@@ -32,31 +32,43 @@ The following video demonstrates each of the steps outlined below in text.
 
 ## Line Anchors
 
+Line anchors allow us to query for the beginning or the ending of a line.
+
 ### The Caret (^)
 
 If you wanted to match the start of a line, you can begin your query with a caret (^).
 
-TODO - EXAMPLE
+```
+abcabc abcabc
+abcabc abcabc abcabc
+abcabc abcabc
+```
+
+<img src="../assets/img/anchors1.png" width="100%" style="border: 2px solid #000;">
 
 ### The Dollar Sign ($)
 
 Similarly, end your query with a dollar sign ($) to match the end of a line.
 
-TODO - Example
+<img src="../assets/img/anchors2.png" width="100%" style="border: 2px solid #000;">
 
 ## Word Boundaries
 
 When searching for a short word, like "is", you'll often find matches that contain "is", such as "island" or "miss". You might then search for " is " (note the spaces), but now you'll miss all the occurences of is that don't necessarily come after a space -- starting a line with is, or ending a sentence with is.
 
-Word boundaries (\b) match any non-word characters (such as whitespace and punctuation), so you can search for all occurrences of that word without having to worry about the type of character that follows/preceeds it.
+Word boundaries (\b) match any non-word characters (such as whitespace and punctuation) that appear right before or right after an alphanumeric character, so you can search for all occurrences of that word without having to worry about the type of character that follows/preceeds it.
 
-By surrounding your word with word boundaries, it'll specifically search for the full word.
+By querying for only `\b`, we can see where all the word boundries are for the following sample text.
 
-TODO - Example
+```
+I visited these islands a couple years back. 
+```
 
-Note that it's not perfect. If there's any numbers or non-punctuation symbols before/after your word, it won't match those.
+<img src="../assets/img/anchors3.png" width="100%" style="border: 2px solid #000;">
 
-TODO - Example
+By surrounding your word with word boundaries, it'll specifically search for the full word. Below, we search for all occurrences of the word "a" without matching for the letter a inside 'years' and 'islands',
+
+<img src="../assets/img/anchors4.png" width="100%" style="border: 2px solid #000;">
 
 
 ## Key Points / Summary
