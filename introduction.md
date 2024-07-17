@@ -21,7 +21,7 @@ Add, edit, or remove any content below for the workshop in question.
 <!-- Below the video/slides, this is where you put the text version of the page. -->
 ## What are Regular Expressions?
 
-A regular expressions (also referred to as RegEx, RegExp, and rational expression), is a sequence of characters that specifies a search pattern. They're used to search for patterns in strings of text, allowing you to search for and manipulate text.
+A regular expression (also referred to as RegEx, RegExp, or rational expression), is a sequence of characters that specifies a search pattern. They're used to search for patterns in strings of text, allowing you to search for and manipulate text.
 
 ### History of Regular Expressions
 
@@ -31,7 +31,7 @@ However, it wasn't until 1968 that regular expressions really picked up in use, 
 
 Grep search commands would look like this: `g/regular expression/p`, where `g` and `p` are additional flags standing for "Global" (search the whole document) and "Print" (print all line results) respectively. Shortening regular expression to 're', you get `g/re/p`, or grep. Grep therefore stands for "Global search for Regular Expression and Print matching lines".
 
-From there on, many programming languages, text editors, text analysis tools, and other applications started supporting regular expressions in one form or another.
+From then on, many programming languages, text editors, text analysis tools, and other applications started supporting regular expressions in one form or another.
 
 ### What can Regular Expressions be used for?
 
@@ -52,7 +52,7 @@ Text Manipulation
 Some tools and platforms that support Regular Expressions include (but are not exclusive to):
 
 - **Programming languages** - Perl, Python, R, Javascript
-- **Text Editors and IDEs** - Notepad++, Visual Studio Code.
+- **Text Editors and IDEs** - Notepad++, Visual Studio Code
 - **Database Systems** - MySQL, SQLite, MongoDB
 - **Data Analysis Tools**  - Excel, OpenRefine, Tableau
 - **Command-line Utilities** - grep, sed, awk (Unix-like systems), findstr (Windows)

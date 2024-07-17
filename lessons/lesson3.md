@@ -8,7 +8,7 @@ parent: Lessons
 {: .no_toc}  
 # Lesson 3 - Alternation and Grouping
 
-A small description about the lesson.
+Alternation and grouping allows for the creation of more complex search queries that can search for various patterns.
 
 <details markdown="block" class="toc">
   <summary>
@@ -20,9 +20,9 @@ A small description about the lesson.
 </details>
 
 ## Lesson Objectives
-- A learning objective.
-- Second learning objective.
-- Another learning objective.
+- Use alternation to search for different patterns.
+- Apply quantifiers and alternation on groups.
+- Capture data using capture groups.
 
 <!-- ## Lesson Video
 The following video demonstrates each of the steps outlined below in text.
@@ -110,5 +110,6 @@ Rarely, you might also need to nest capture groups together. The process for thi
 
 ## Key Points / Summary
 
-- Remind the student about what they just learned.
-- You can also note down any key information to keep in mind.
+- Alternation can be used to specify various patterns.
+- Groups allow for the creation of more complicated search queries.
+- You can use capture groups in some programs to extract information from search matches.

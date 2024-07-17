@@ -8,7 +8,7 @@ parent: Lessons
 {: .no_toc}  
 # Lesson 4 - Anchors and Boundaries
 
-A small description about the lesson.
+Anchors and boundries can be used to find the edges of words, lines, and texts.
 
 <details markdown="block" class="toc">
   <summary>
@@ -20,9 +20,8 @@ A small description about the lesson.
 </details>
 
 ## Lesson Objectives
-- A learning objective.
-- Second learning objective.
-- Another learning objective.
+- Match the beginning and end of a line using line anchors.
+- Use word boundaries to match words.
 
 <!-- ## Lesson Video
 The following video demonstrates each of the steps outlined below in text.
@@ -73,5 +72,5 @@ By surrounding your word with word boundaries, it'll specifically search for the
 
 ## Key Points / Summary
 
-- Remind the student about what they just learned.
-- You can also note down any key information to keep in mind.
+- Line anchors are used to match the start or end of a line.
+- Word boundries can help match full words.
