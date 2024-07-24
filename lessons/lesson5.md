@@ -20,9 +20,8 @@ A small description about the lesson.
 </details>
 
 ## Lesson Objectives
-- A learning objective.
-- Second learning objective.
-- Another learning objective.
+- Use lookarounds to assert conditions.
+- Verify password requirements with lookarounds.
 
 ## Lookarounds
 
@@ -116,5 +115,5 @@ The search query above uses a negative lookbehind to match all characters that a
 
 ## Key Points / Summary
 
-- Remind the student about what they just learned.
-- You can also note down any key information to keep in mind.
+- Lookarounds are used to test conditions about text in front or behind the current search position.
+- You can test passwords with lookarounds without matching or capturing any of the text itself.
