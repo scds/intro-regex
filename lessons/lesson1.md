@@ -52,11 +52,11 @@ Sample Text: This is an example text showcasing regular characters such as A, b,
 
 In the search below, we look for any occurrences of the term "example".
 
-<img src="../assets/img/basic1.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic1.png" width="100%" style="border: 2px solid #000;" alt="The RegEx101 regular expression, test string, explanation, and matches menu. 'example' was matched on characters 24-31.">
 
 In this next example search, we look for any occurrences of the letter "s". Note that it only highlights the lowercase letters.
 
-<img src="../assets/img/basic2.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic2.png" width="100%" style="border: 2px solid #000;" alt="'s' was matched several times, from 16-17, 19-20, and 37-38. There are more occurrences that scroll off the page.">
 
 
 ## Symbols
@@ -65,11 +65,11 @@ Some symbols, such as `.`, `?`, and `!`, have a special meaning when using regul
 
 Below, we show what happens if you only use "." as your regular expression. Instead of searching for all occurrences of ".", it will highlight every single character.
 
-<img src="../assets/img/basic3.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic3.png" width="100%" style="border: 2px solid #000;" alt="Matches for every letter in the test string are shown.">
 
 If you wanted to search for the occurrences of ".", you'll need to add a backslash before the period. This can be said about any other special character.
 
-<img src="../assets/img/basic4.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic4.png" width="100%" style="border: 2px solid #000;" alt="Only the '.' character is matched.">
 
 
 ## Metacharacters
@@ -82,17 +82,17 @@ The dot (.) matches any singular character, with the exception of newlines. By i
 
 The example below uses the search query `i.`, which will return all occurences of the letter "i" followed by any character.
 
-<img src="../assets/img/basic5.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic5.png" width="100%" style="border: 2px solid #000;" alt="'is' in the word 'This', 'is' in the word 'is', and 'in' in the word 'showcasing' are matched.">
 
 ### Whitespace
 
 The \s metacharacter matches any whitespace character, which includes spaces, tabs, newlines, null characters, and carriage returns. With a simple test string such as this one, it will only highlight the spaces. However, if you were to create a couple paragraphs, the tabs at the start of each paragraph as well as the newline (enter) characters will also be highlighted.
 
-<img src="../assets/img/basic6.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic6.png" width="100%" style="border: 2px solid #000;" alt="All the space characters are matched.">
 
 You can also search for any **non**-whitespace character using \S.
 
-<img src="../assets/img/basic7.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic7.png" width="100%" style="border: 2px solid #000;" alt="All the non-space characters are matched.">
 
 If you are instead searching for a specific whitespace character, you can use...
 
@@ -113,27 +113,26 @@ If you are instead searching for a specific whitespace character, you can use...
 
 The \d metacharacter matches any digit character (0-9).
 
-<img src="../assets/img/basic8.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic8.png" width="100%" style="border: 2px solid #000;" alt="The number '1' is matched.">
 
 Like with whitespace, \D searches for any **non**-digit character.
 
-<img src="../assets/img/basic9.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic9.png" width="100%" style="border: 2px solid #000;" alt="Every character except the digit '1' is matched.">
 
 ## Character Sets and Ranges
 
 You can also create your own character sets for which characters to match using square brackets. Do not separate these characters by spaces or commas, otherwise the RegEx will also search for all occurrences of " " and "," as well.
 
-<img src="../assets/img/basic10.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic10.png" width="100%" style="border: 2px solid #000;" alt="The letters 'a', 'b', 'c', and 'd' are matched everywhere they occur.">
 
 If you want to match several characters sequentially, you can use a character range instead. The range `a-d` searches for the letters a, b, c, and d. The range `a-z` similarly searches for every **lowercase** letter from a to z.
 
-<img src="../assets/img/basic11.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic11.png" width="100%" style="border: 2px solid #000;" alt="The same result occurs as before.">
 
 By adding a caret symbol (^) at the start of your character set, the search will look for any character that is **not** in the set. This example below searches for all characters that are not a, b, c, or d.
 
-<img src="../assets/img/basic12.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/basic12.png" width="100%" style="border: 2px solid #000;" alt="Every character except the letters 'a', 'b', 'c', and 'd' is matched.">
 
-<!-- Summarize your learning objectives here. It acts as a reminder to the learner about what they just learned, as well as a checklist for you to make sure you covered everything you wished to cover. -->
 ## Key Points / Summary
 
 - You can use RegEx as a basic text search tool if you're just looking of words.

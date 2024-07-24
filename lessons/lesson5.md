@@ -39,7 +39,7 @@ picture004.jpg
 picture005.png
 ```
 
-<img src="../assets/img/lookarounds1.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/lookarounds1.png" width="100%" style="border: 2px solid #000;" alt="'picture001', 'picture002', and 'picture005' are matched.">
 
 Above, we have a list of image files, some of which are .png files while others are .jpg files. Suppose we wanted to only match the filename portion (not including the file extension) of all .png files. One way we could achieve this, is by matching any number of characters and then "looking ahead" to see if the next characters include .png, but also not including the .png as part of our match.
 
@@ -47,7 +47,7 @@ Of course, this isn't the only way we could achieve this result. We could have i
 
 Search Query: `(^.*).png`
 
-<img src="../assets/img/lookarounds2.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/lookarounds2.png" width="100%" style="border: 2px solid #000;" alt="'picture001', 'picture002', and 'picture005' are matched and captured.">
 
 ### Using Lookarounds for Password Verification
 
@@ -76,7 +76,7 @@ ah3Das@$w$f312
 n0T#
 ```
 
-<img src="../assets/img/lookarounds3.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/lookarounds3.png" width="100%" style="border: 2px solid #000;" alt="A zero-lengthed match occurs at the start of the second password, `ah3Das@$w$f312`.">
 
 Since we start our search query with a line anchor (the caret ^), we test the start of each line for a password. "thisisabadpassword" doesn't pass as it only has lowercase letters, and "n0T#" doesn't pass as it isn't 6 characters or longer. However, "ah3Das@$w$f312" passes, as seen by the purple zero-length match at the start of it.
 
@@ -93,7 +93,7 @@ Test String:
 abcdefghijklmnop
 ```
 
-<img src="../assets/img/lookarounds4.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/lookarounds4.png" width="100%" style="border: 2px solid #000;" alt="`bc` and `jk` are matched.">
 
 The above query searches for any two characters so long as they're preceeded with the letters a or i.
 
@@ -110,7 +110,7 @@ Test String:
 abcdefghijklmnop
 ```
 
-<img src="../assets/img/lookarounds5.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/lookarounds5.png" width="100%" style="border: 2px solid #000;" alt="Every single character except for 'b' and 'j' are matched seperately.">
 
 The search query above uses a negative lookbehind to match all characters that are not preceeded by the letters a or i.
 

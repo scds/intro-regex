@@ -34,7 +34,7 @@ The following video demonstrates each of the steps outlined below in text.
 
 With alternation, you can tell RegEx to match one pattern *or* the other. For example, if you wanted to find all occurrences of any fruit, you can split them apart with a pipe character ( \| ) as seen below. 
 
-<img src="../assets/img/alternation1.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/alternation1.png" width="100%" style="border: 2px solid #000;" alt="The words 'Apples', 'Bananas', and 'Oranges' are matched.">
 
 Above, we search for any occurrence of Apples, Bananas, or Oranges. Keep in mind that this is still case sensitive, so if the test string has "apples" with a lowercase A, it wouldn't match.
 
@@ -49,13 +49,13 @@ DogsDogsDogsDogsDogsDogs
 Dogsssssssssssssssssssss
 ```
 
-Suppose we wanted to capture all "Dogs" that occur one or more times sequentiallyfrom the text above. If we just did `Dogs+` as our search query, we'd get matches for the word Dogs with one or more 's's. This happens because the quantifier is only applied on the character prior to it.
+Suppose we wanted to capture all "Dogs" that occur one or more times sequentially from the text above. If we just did `Dogs+` as our search query, we'd get matches for the word Dogs with one or more 's's. This happens because the quantifier is only applied on the character prior to it.
 
-<img src="../assets/img/alternation2.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/alternation2.png" width="100%" style="border: 2px solid #000;" alt="'DogsDogsDogsDogsDogsDogs' and 'Dogsssssssssssssssssssss' are both matched.">
 
 To fix this, we can put "Dogs" into a group by surrounding it with round brackets, and then apply the quantifier on the group itself. This results in the search query of `(Dogs)+`.
 
-<img src="../assets/img/alternation3.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/alternation3.png" width="100%" style="border: 2px solid #000;" alt="'DogsDogsDogsDogsDogsDogs' and 'Dogs' from 'Dogsssssssssssssssssssss' are both matched.">
 
 
 ### Alternation with Groups
@@ -68,7 +68,7 @@ To show this in action, we return to the phone number example from the previous 
 Sample Text: My phone number is 123-456-7890. This can also be written as (123)-456-7890, but (123-456-7890 or 123)-456-7890 won't be accepted.
 ```
 
-<img src="../assets/img/alternation4.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/alternation4.png" width="100%" style="border: 2px solid #000;" alt="`123-456-7890`, `(123)-456-7890`, and `123-456-7890` from `(123-456-7890` are matched.">
 
 Let's break down the regular expression, `(\(\d+\)|\d+)-\d+-\d+`.
 
@@ -90,7 +90,7 @@ In RegEx101, you can see the captured groups in the "Match Information" tab on t
 NAME_2024-01-01_001.jpg
 ```
 
-<img src="../assets/img/alternation5.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/alternation5.png" width="100%" style="border: 2px solid #000;" alt="The entire file name is matched, but only '2024-01-01' is captured by the capture group.">
 
 An example of when this could be useful is if you're trying to make a program that searches through a big list of files. You can iterate over every file name and try to search for a key piece of information in its name, like the date or file type. In the picture above, we captured the date information part of the file name. If we only wanted to process files within a specific date range, we can compare this captured date value to the date range we want.
 
@@ -100,13 +100,13 @@ Showing this in use is out of the scope for this module, but you can usually fin
 
 Sometimes, you'll want to use groups without capturing the content. To ignore the content, add `?:` after the first bracket.
 
-<img src="../assets/img/alternation6.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/alternation6.png" width="100%" style="border: 2px solid #000;" alt="The entire file name is matched, and there is no captured content">
 
 ### Nesting Capture Groups
 
 Rarely, you might also need to nest capture groups together. The process for this is the exact same.
 
-<img src="../assets/img/alternation7.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/alternation7.png" width="100%" style="border: 2px solid #000;" alt="The entire file name is matched, with '2024-01-01' captured in the first capture group, and '2024' caputred in the second capture group.">
 
 ## Key Points / Summary
 

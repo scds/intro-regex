@@ -43,13 +43,13 @@ abcabc abcabc abcabc
 abcabc abcabc
 ```
 
-<img src="../assets/img/anchors1.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/anchors1.png" width="100%" style="border: 2px solid #000;" alt="The first three letters, 'abc', from the start of each line are matched.">
 
 ### The Dollar Sign ($)
 
 Similarly, end your query with a dollar sign ($) to match the end of a line.
 
-<img src="../assets/img/anchors2.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/anchors2.png" width="100%" style="border: 2px solid #000;" alt="The last three letters, 'aba', from the end of each line are matched.">
 
 ## Word Boundaries
 
@@ -63,11 +63,11 @@ By querying for only `\b`, we can see where all the word boundries are for the f
 I visited these islands a couple years back. 
 ```
 
-<img src="../assets/img/anchors3.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/anchors3.png" width="100%" style="border: 2px solid #000;" alt="There are zero-lengthed matches at the start and end of each word.">
 
 By surrounding your word with word boundaries, it'll specifically search for the full word. Below, we search for all occurrences of the word "a" without matching for the letter a inside 'years' and 'islands',
 
-<img src="../assets/img/anchors4.png" width="100%" style="border: 2px solid #000;">
+<img src="../assets/img/anchors4.png" width="100%" style="border: 2px solid #000;" alt="Only the full word 'a' is matched. None of the 'a' characters that occur in the rest of the sample text are matched.">
 
 
 ## Key Points / Summary
