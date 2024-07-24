@@ -11,24 +11,16 @@ Add, edit, or remove any content below for the workshop in question.
 # Congratulations 
 
 <!-- Edit this line to mention your workshop name -->
-**Congratulations!** You've just finished this workshop.
+**Congratulations!** You've just finished the Introduction to Pattern Matching with Regular Expressions workshop.
 
 <!-- Recap your learning objectives from the introductory. -->
 You should now be able to:
-- To do this
-- And this other thing
-- Double check that the learning objectives in the introduction match up!
+- Create complex search queries using quantifiers, repetition, alternation, capture groups, anchors, boundaries, and lookarounds.
+- Capture data in text with capture groups.
+- Verify text input.
 
 <!-- This is where you can add additional resources for your readers. -->
 # Additional Resources
-To learn more about any particular topic, take a look at the links below.
 
-## Topic
-- Some link
-- Other 
-
-## Topic 2
-- Other resource
-
-## Related Workshops
-- Link the users to other related SCDS workshops here!
+- [RegEx101](https://regex101.com/)
+- [RexEgg](https://www.rexegg.com/regex-quickstart.php) - Detailed explanations of RegEx features

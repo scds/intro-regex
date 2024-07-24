@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Lesson 5 - Lookaheads and Lookbehinds (optional)
+title: Lesson 5 - Lookaheads and Lookbehinds
 nav_order: 5
 parent: Lessons
 ---
 
 {: .no_toc}  
-# Lesson 5 - Lookaheads and Lookbehinds (optional)
+# Lesson 5 - Lookaheads and Lookbehinds
 
 Lookaheads and lookbehinds (or otherwise lookarounds), can help us verify and test conditions in our search text.
 

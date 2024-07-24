@@ -17,18 +17,16 @@ Add, edit, or remove any content below for the workshop in question. -->
 <!-- Main header -->
 # Introduction to Pattern Matching with Regular Expressions
 
-This is a short description about the topic of the workshop. Replace this text with your own.
+Everyone has searched for text on a web page, or may have tried replacing words in a document using a "Find and Replace" tool. These searches tend to be rather simple, however some programs and tools allow for more complex and powerful searches using 'regular expressions'.
 
-In this tutorial, you will learn about ______.
+In this workshop, you will dive into the intricacies of regular expressions to find, capture, verify, and replace text.
 
 <!-- What will the student learn to do, learn to use, etc. -->
 ## Learning Objectives
 By the end of this workshop, you will be able to:
-- Learning objective 1
-- Learning objective 2
-- Learning objective 3
-- Learning objective 4
-- You can add more here.
+- Create regular expressions to search for text.
+- Use capture groups to gather data in text.
+- Assert conditions in your matches using lookarounds.
 
 <!-- Estimate the time the workshop will take to complete. Feel free to remove this. -->
 ## Duration (optional)
