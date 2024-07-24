@@ -8,7 +8,7 @@ parent: Lessons
 {: .no_toc}  
 # Lesson 5 - Lookaheads and Lookbehinds (optional)
 
-A small description about the lesson.
+Lookaheads and lookbehinds (or otherwise lookarounds), can help us verify and test conditions in our search text.
 
 <details markdown="block" class="toc">
   <summary>
