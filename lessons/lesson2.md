@@ -48,7 +48,7 @@ The search below looks for all occurrences of the letters p and l, where there's
 
 <img src="../assets/img/quant1.png" width="100%" style="border: 2px solid #000;" alt="'pl' from the word 'Sample' and 'pool' from the word 'pool' are matched.">
 
-You might try to use the asterix to search for all numbers by using the `\d*' query. However, the issue here is that it will also match when there are 0 numbers. An example of that is shown below. Despite there being no numbers in the search text, there's still plenty of 0 lengthed matches found.
+You might try to use the asterix to search for all numbers by using the `\d*` query. However, the issue here is that it will also match when there are 0 numbers. An example of that is shown below. Despite there being no numbers in the search text, there's still plenty of 0 lengthed matches found.
 
 <img src="../assets/img/quant2.png" width="100%" style="border: 2px solid #000;" alt="Every position is matched, but they match 0 characters. Just an empty 'string'.">
 
@@ -64,7 +64,7 @@ For the examples below, we’ll search the following text:
 Sample Text: My phone number is 123-456-7890.
 ```
 
-We use the query "*\\d+-\\d+-\\d+" to find all phone numbers in the format of x-x-x where x is any number of digits.
+We use the query `*\\d+-\\d+-\\d+` to find all phone numbers in the format of x-x-x where x is any number of digits.
 
 <img src="../assets/img/quant4.png" width="100%" style="border: 2px solid #000;" alt="The phone number '123-456-7890' is matched.">
 
@@ -74,7 +74,7 @@ When a pattern may or may not appear, you can use the question mark. This will m
 
 <img src="../assets/img/quant5.png" width="100%" style="border: 2px solid #000;" alt="The phone numbers `123-456-7890` and `(123)-456-7890` are matched.">
 
-Let's break down the regular expression used above. Here, we want to look for all numbers separated by two -'s, where the first group of numbers may or may not be surrounded by parentheses ( ).  If we want to look for a single parenthesis, we have to add a backslash before them because they too are special characters. Since the parenthesis may or may not occur, we add a ? symbol after it, to show that it can match zero or one time. We do this for both the opening parenthesis and the closing parenthesis, and we get "\\(?\d+\\)?-\\d+-\\d+".
+Let's break down the regular expression used above. Here, we want to look for all numbers separated by two -'s, where the first group of numbers may or may not be surrounded by parentheses ( ).  If we want to look for a single parenthesis, we have to add a backslash before them because they too are special characters. Since the parenthesis may or may not occur, we add a `?` symbol after it, to show that it can match zero or one time. We do this for both the opening parenthesis and the closing parenthesis, and we get `\\(?\d+\\)?-\\d+-\\d+`.
 
 {: .note }
 > Note that the above expression won't be entirely correct. If the sample text had something like "(455-455-4555" (with a single parenthesis), it would also match to it. The image below shows this. Ideally, we'd want to check whether both occur or neither occur. 
@@ -93,21 +93,21 @@ aa
 a
 ```
 
-If you want to match a character *exactly* *x* amount of times, you can use curly brackets -- {*x*}.
+If you want to match a character *exactly* *x* amount of times, you can use curly brackets -- `{x}`.
 
 <img src="../assets/img/quant7.png" width="100%" style="border: 2px solid #000;" alt="The first three 'a' characters ('aaa') in the first three lines are matched.">
 
-You can also specify a range in this way too, from *x* to *y* amount of times (inclusive) -- {*x*, *y*}.
+You can also specify a range in this way too, from *x* to *y* amount of times (inclusive) -- `{x, y}`.
 
 <img src="../assets/img/quant8.png" width="100%" style="border: 2px solid #000;" alt="The first four 'a' characters ('aaaa') in the first two lines are matched, and then the first three 'a' characters ('aaa') in the third line is matched.">
 
-Lastly, you can also match a character *at least* *x* amount of times -- {*x*, }
+Lastly, you can also match a character *at least* *x* amount of times -- `{x, }`
 
 <img src="../assets/img/quant9.png" width="100%" style="border: 2px solid #000;" alt="All the 'a' characters in the first three lines are matched. 'aaaaa', 'aaaa', and 'aaa'.">
 
 ## Lazy vs. Greedy Quantifiers
 
-For the following examples, the test string is below.
+For the following examples, the test string is provided below.
 
 ```
 (5+3)*(3-2)
@@ -117,7 +117,7 @@ By default, quantifiers are considered "greedy". When matching a pattern, RegEx 
 
 <img src="../assets/img/quant10.png" width="100%" style="border: 2px solid #000;" alt="The entire string, '(5+3)*(3-2)' is matched.">
 
-Since the .* in our regular expression can match any letter, it could also match parentheses. So, when the regular expression looks through our sample text, it finds the first parenthesis, treats everything else in the middle as the . wildcard character, and then matches the final parentheses.
+Since the `.*` in our regular expression can match any letter, it could also match parentheses. So, when the regular expression looks through our sample text, it finds the first parenthesis, treats everything else in the middle as the . wildcard character, and then matches the final parentheses.
 
 To make a quantifier lazy, you have to add a question mark (?) following the quantifier.
 
@@ -127,5 +127,5 @@ Now, we have two separate matches! One for (5+3), and one for (3-2).
 
 ## Key Points / Summary
 
-- The *, +, and ? symbols are quantifiers that can specify the number of times a symbol is expected to appear.
+- The `*`, `+`, and `?` symbols are quantifiers that can specify the number of times a symbol is expected to appear.
 - Greedy quantifiers match a pattern as many times as possible, while lazy quantifiers match as few as possible.

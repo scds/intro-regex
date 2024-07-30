@@ -34,6 +34,9 @@ The following video demonstrates each of the steps outlined below in text.
 
 With alternation, you can tell RegEx to match one pattern *or* the other. For example, if you wanted to find all occurrences of any fruit, you can split them apart with a pipe character ( \| ) as seen below. 
 
+Search Query: `Apples|Bananas|Oranges`  
+Test String: `Store sales: Apples, Bananas, Bread, Milk, Oranges`
+
 <img src="../assets/img/alternation1.png" width="100%" style="border: 2px solid #000;" alt="The words 'Apples', 'Bananas', and 'Oranges' are matched.">
 
 Above, we search for any occurrence of Apples, Bananas, or Oranges. Keep in mind that this is still case sensitive, so if the test string has "apples" with a lowercase A, it wouldn't match.
@@ -44,12 +47,14 @@ Above, we search for any occurrence of Apples, Bananas, or Oranges. Keep in mind
 
 If you want to use a quantifier on a group of characters, you can do so by surrounding the group of characters with round brackets ( ) and proceeding the closing bracket with a quantifier.
 
+Suppose we wanted to capture all "Dogs" that occur one or more times sequentially from the text above. If we just did `Dogs+` as our search query, we'd get matches for the word "Dogs" with one or more `s`'s. This happens because the quantifier is only applied on the character prior to it.
+
+Search Query: `Dogs+`  
+Test String:  
 ```
 DogsDogsDogsDogsDogsDogs
 Dogsssssssssssssssssssss
 ```
-
-Suppose we wanted to capture all "Dogs" that occur one or more times sequentially from the text above. If we just did `Dogs+` as our search query, we'd get matches for the word Dogs with one or more 's's. This happens because the quantifier is only applied on the character prior to it.
 
 <img src="../assets/img/alternation2.png" width="100%" style="border: 2px solid #000;" alt="'DogsDogsDogsDogsDogsDogs' and 'Dogsssssssssssssssssssss' are both matched.">
 
@@ -64,6 +69,8 @@ You can also use groups to limit the extent of alternation. Without groups, RegE
 
 To show this in action, we return to the phone number example from the previous lesson.
 
+Search Query: `(\(\d+\)|\d+)-\d+-\d+`    
+Test String:  
 ```
 Sample Text: My phone number is 123-456-7890. This can also be written as (123)-456-7890, but (123-456-7890 or 123)-456-7890 won't be accepted.
 ```
@@ -76,7 +83,7 @@ Let's break down the regular expression, `(\(\d+\)|\d+)-\d+-\d+`.
   - This group has an alternation, as shown by the pipe character ( \| ). This alternation will either accept `\(\d+\)`, or `\d+`.
     - As we mentioned in the previous lesson, `\(\d+\)` first matches an open bracket (, then any digit one or more times, and then a closed bracket ).
     - `\d+` just matches any digit one or more times.
-  - After the group, the rest of the query is the same as before. We look for a -, followed by one or more digits, followed by a -, and finally any number of digits.
+  - After the group, the rest of the query is the same as before. We look for a `-`, followed by one or more digits, followed by a `-`, and finally any number of digits.
 
 You may have also noticed that the valid part of "(123-456-7890" was accepted. This may or may not be fine depending on your usage case. For us, it's a valid case since it only matches the valid portion of the phone number.
 
@@ -86,6 +93,8 @@ Some implementations of RegEx allow for "capture groups". In languages like Pyth
 
 In RegEx101, you can see the captured groups in the "Match Information" tab on the right hand side.
 
+Search Query: `.*?_(.*?)_.*?\.jpg`    
+Test String:  
 ```
 NAME_2024-01-01_001.jpg
 ```
@@ -96,15 +105,21 @@ An example of when this could be useful is if you're trying to make a program th
 
 Showing this in use is out of the scope for this module, but you can usually find a lot of information online by searching for "\_\_\_\_ regex" or "\_\_\_\_ regular expression".
 
+<!-- Explanation for query above -->
+
 ### Ignoring Captures
 
 Sometimes, you'll want to use groups without capturing the content. To ignore the content, add `?:` after the first bracket.
+
+Search Query: `.*?_(?:.*?)_.*?\.jpg`    
 
 <img src="../assets/img/alternation6.png" width="100%" style="border: 2px solid #000;" alt="The entire file name is matched, and there is no captured content">
 
 ### Nesting Capture Groups
 
 Rarely, you might also need to nest capture groups together. The process for this is the exact same.
+
+Search Query: `.*?_((\d+)-.+)_.*?\.jpg`
 
 <img src="../assets/img/alternation7.png" width="100%" style="border: 2px solid #000;" alt="The entire file name is matched, with '2024-01-01' captured in the first capture group, and '2024' caputred in the second capture group.">
 

@@ -27,8 +27,7 @@ Lookaheads and lookbehinds (or otherwise lookarounds), can help us verify and te
 
 Lookarounds allow us to make assertions about the text we're searching without "consuming" the text. This allows us to search for text in specific textual contexts without have to capture or match those contexts. Let's take a look at the example below to see this in action.
 
-Search Query: `^.*(?=.png)`
-
+Search Query: `^.*(?=.png)`  
 Test String:
 ```
 picture001.png
@@ -66,8 +65,7 @@ Individually, it's relatively easy to create a search query that matches each re
 
 To get a full password verification, we can just put each one in a lookahead.
 
-Search Query: `^(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Z,a-z,0-9])(?=.{6})`
-
+Search Query: `^(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Z,a-z,0-9])(?=.{6})`  
 Test String:
 ```
 thisisabadpassword
@@ -85,8 +83,7 @@ As long as we have a match, the password is valid. It doesn't capture the passwo
 
 Lookbehinds function identically to lookaheads, but they instead assert conditions on text prior to the current position of the search.
 
-Search Query: `(?<=a|i)..`
-
+Search Query: `(?<=a|i)..`  
 Test String:
 ```
 abcdefghijklmnop
@@ -102,12 +99,7 @@ Just like how we can assert whether a condition is true using lookarounds, we ca
 
 A negative lookahead is written as `(?!.)`, and a negative lookbehind is written as `(?<!.)`, where `.` is the condition.
 
-Search Query: `(?<!a|i).`
-
-Test String:
-```
-abcdefghijklmnop
-```
+Search Query: `(?<!a|i).`  
 
 <img src="../assets/img/lookarounds5.png" width="100%" style="border: 2px solid #000;" alt="Every single character except for 'b' and 'j' are matched seperately.">
 
